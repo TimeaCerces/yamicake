@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en"><!-- Basic -->
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+    <title>YamiCake</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon1.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">    
+	<!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">    
+	<!-- Pickadate CSS -->
+    <link rel="stylesheet" href="css/classic.css">    
+	<link rel="stylesheet" href="css/classic.date.css">    
+	<link rel="stylesheet" href="css/classic.time.css">    
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+	<!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">
+					<img src="images/logo3.png" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-rs-food">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="index.html">Acasa</a></li>
+						<li class="nav-item"><a class="nav-link" href="menu.html">Meniu</a></li>
+						<li class="nav-item"><a class="nav-link" href="about.html">Noi</a></li>
+						<li class="nav-item active dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Pagini</a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="reservation.html">Rezervare</a>
+								<a class="dropdown-item" href="stuff.html">Stuff</a>
+								<a class="dropdown-item" href="gallery.html">Galerie</a>
+							</div>
+						
+						<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+	
+	<!-- Start All Pages -->
+	<div class="all-page-title page-breadcrumb">
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-lg-12">
+					<h1>Rezervare</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End All Pages -->
+	
+	<!-- Start Reservation -->
+	<div class="reservation-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="heading-title text-center">
+						<h2>Rezervare</h2>
+						<p>Pentru a rezervare o masa la noi, completeaza formularul</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 col-sm-12 col-xs-12">
+					<div class="contact-block">
+						<form id="contactForm">
+							<div class="row">
+								<div class="col-md-6">
+									<h3>Rezerva o masa</h3>
+									<div class="col-md-12">
+										<div class="form-group">
+											<input id="input_date" class="datepicker picker__input form-control" placeholder="Ziua" name="date" type="text" value="" equired data-error="Please enter Date">
+											<div class="help-block with-errors"></div>
+										</div>                                 
+									</div>
+									<div class="col-md-12">
+										<div class="form-group">
+											<input id="input_time" class="time form-control picker__input" placeholder="Ora" required data-error="Please enter time">
+											<div class="help-block with-errors"></div>
+										</div>                                 
+									</div>
+									<div class="col-md-12">
+										<div class="form-group">
+											<select class="custom-select d-block form-control" id="person" required data-error="Selecteaza numarul de persoane">
+											  <option disabled selected>Selecteaza numarul de persoane*</option>
+											  <option value="1">1</option>
+											  <option value="2">2</option>
+											  <option value="3">3</option>
+											  <option value="4">4</option>
+											  <option value="5">5</option>
+											  <option value="6">6</option>
+											  <option value="7">7</option>
+											</select>
+											<div class="help-block with-errors"></div>
+										</div> 
+									</div>
+								</div>
+								<div class="col-md-6">
+									<h3>Detalii de contact</h3>
+									<div class="col-md-12">
+										<div class="form-group">
+											<input type="text" class="form-control" id="Nume" name="name" placeholder="Nume" required data-error="Please enter your name">
+											<div class="help-block with-errors"></div>
+										</div>                                 
+									</div>
+									<div class="col-md-12">
+										<div class="form-group">
+											<input type="text" placeholder="Email" id="email" class="form-control" name="email" required data-error="Please enter your email">
+											<div class="help-block with-errors"></div>
+										</div> 
+									</div>
+									<div class="col-md-12">
+										<div class="form-group">
+											<input type="text" placeholder="Telefon" id="phone" class="form-control" name="telefon" required data-error="Please enter your Numbar">
+											<div class="help-block with-errors"></div>
+										</div> 
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="submit-button text-center">
+										<button class="btn btn-common" id="submit" type="submit">Rezerva masa</button>
+										<div id="msgSubmit" class="h3 text-center hidden"></div> 
+										<div class="clearfix"></div> 
+									</div>
+								</div>
+							</div>            
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Reservation -->
+	
+	<!-- Start Customer Reviews -->
+	<div class="customer-reviews-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="heading-title text-center">
+						<h2>Ce se spune despre noi?</h2>
+						<p>Parerea clientilor nostri conteaza</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8 mr-auto ml-auto text-center">
+					<div id="reviews" class="carousel slide" data-ride="carousel">
+						<div class="carousel-inner mt-4">
+							<div class="carousel-item text-center active">
+								<div class="img-box p-1 border rounded-circle m-auto">
+									<img class="d-block w-100 rounded-circle" src="images/profile-1.jpg" alt="">
+								</div>
+								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Paul Ionescu</strong></h5>
+								<h6 class="text-dark m-0">Client</h6>
+								<p class="m-0 pt-3">A fost unul dintre primele localuri la care am mers dupa ce s-au redeschis toate in iunie, pentru ca imi era dor de o prajitura fina. Terasa si mai frumoasa decat o stiam (doar aceasta deschisa, conform regulilor in vigoare la aceasta data), dulciurile la fel de bune.</p>
+							</div>
+							<div class="carousel-item text-center">
+								<div class="img-box p-1 border rounded-circle m-auto">
+									<img class="d-block w-100 rounded-circle" src="images/profile-3.jpg" alt="">
+								</div>
+								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Stefan Fostor</strong></h5>
+								<h6 class="text-dark m-0">Client</h6>
+								<p class="m-0 pt-3">Comandam de la ei toate torturile pentru toate aniversarile din familie si suntem foarte multumiti. Sunt facute cu ingredinete de foarte buna calitate iar gustul este divin.</p>
+							</div>
+							<div class="carousel-item text-center">
+								<div class="img-box p-1 border rounded-circle m-auto">
+									<img class="d-block w-100 rounded-circle" src="images/profile-7.jpg" alt="">
+								</div>
+								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Daniel Ionescur</strong></h5>
+								<h6 class="text-dark m-0">Client</h6>
+								<p class="m-0 pt-3">Au cele mai bune prajituri. Imi amintesc de gustul prajiturilor pe care le facea bunica mea.</p>
+							</div>
+						</div>
+						<a class="carousel-control-prev" href="#reviews" role="button" data-slide="prev">
+							<i class="fa fa-angle-left" aria-hidden="true"></i>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next" href="#reviews" role="button" data-slide="next">
+							<i class="fa fa-angle-right" aria-hidden="true"></i>
+							<span class="sr-only">Next</span>
+						</a>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Customer Reviews -->
+	
+	<!-- Start Contact info -->
+	<div class="contact-imfo-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<i class="fa fa-volume-control-phone"></i>
+					<div class="overflow-hidden">
+						<h4>Telefon</h4>
+						<p class="lead">
+							+07 123-456-4590
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<i class="fa fa-envelope"></i>
+					<div class="overflow-hidden">
+						<h4>Email</h4>
+						<p class="lead">
+							yamicake@gmail.com
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<i class="fa fa-map-marker"></i>
+					<div class="overflow-hidden">
+						<h4>Locatie</h4>
+						<p class="lead">
+							405432, str. Mica, Cluj-Napoca
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Contact info -->
+	
+	<!-- Start Footer -->
+	<footer class="footer-area bg-f">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<h3>Despre noi</h3>
+					<p>Dorești să savurezi în liniște o prajitura delicioasa? Dorești sa te afli în compania unor prieteni si sa va bucurati de momente deosebit?</p>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>Orar</h3>
+					<p><span class="text-color">Luni: </span>Inchis</p>
+					<p><span class="text-color">Marti-Vineri :</span> 9:Am - 10PM</p>
+					
+					<p><span class="text-color">Sambata-Duminica :</span> 5:PM - 10PM</p>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>Date de contact</h3>
+					<p class="lead">Strada Mica, Cluj-Napoca, RO</p>
+					<p class="lead"><a href="#">+01 2000 800 9999</a></p>
+					<p><a href="#"> yamicake@gmail.com</a></p>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>Abonare</h3>
+					<div class="subscribe_form">
+						<form class="subscribe_form">
+							<input name="EMAIL" id="subs-email" class="form_input" placeholder="Email Address..." type="email">
+							<button type="submit" class="submit">ABONEAZA-TE</button>
+							<div class="clearfix"></div>
+						</form>
+					</div>
+					<ul class="list-inline f-social">
+						<li class="list-inline-item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<p class="company-name">All Rights Reserved. &copy; 2022 <a href="#">YamiCake</a> 
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</footer>
+	<!-- End Footer -->
+	
+	<a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+
+	<!-- ALL JS FILES -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+	<script src="js/jquery.superslides.min.js"></script>
+	<script src="js/images-loded.min.js"></script>
+	<script src="js/isotope.min.js"></script>
+	<script src="js/baguetteBox.min.js"></script>
+	<script src="js/picker.js"></script>
+	<script src="js/picker.date.js"></script>
+	<script src="js/picker.time.js"></script>
+	<script src="js/legacy.js"></script>
+	<script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
